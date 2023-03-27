@@ -21,6 +21,9 @@
     <div class="scrollToTop btn btn-primary">
         <i class="fa-solid fa-turn-up"></i>
     </div>
+    <div class="darkBtn btn">
+      <i class="fa-solid fa-circle-half-stroke"></i>
+    </div>
     
     <!--=================== start navbar ===================-->
     <nav class="navbar navbar-expand-lg sticky-top mt-2">
@@ -29,8 +32,8 @@
             <a class="navbar-brand" href="#"><img src="imgs/logo.png" alt="">
             <span>FlexStart</span></a>
           </div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+          <button class="navbar-toggler" type="button">
+            <i class="fa-solid fa-bars"></i>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -80,6 +83,24 @@
           </div>
         </div>
       </nav>
+      <div class="mobileMenuBck d-none">
+        <button class="menuCloseBtn btn">
+          <i class="fa-regular fa-circle-xmark"></i>
+        </button>
+        <div class="mobileMenu">
+          <ul class="list-unstyled">
+            <li><a href="#home">home</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#services">services</a></li>
+            <li><a href="#porfolio">porfolio</a></li>
+            <li><a href="#team">team</a></li>
+            <li><a href="#blog">blog</a></li>
+            <li><a class="dropdown" href="#">Drop Down</a></li>
+            <li><a href="#contact">contact</a></li>
+          </ul>
+          <a class="btn btn-primary" href="#">get started</a>
+        </div>
+      </div>
     <!--=================== end navbar ===================-->  
 
       <!--=================== start home section ===================-->
@@ -344,9 +365,11 @@
         <div class="cardsHolder">
           <div class="cardsRow row">
             <div class="cardd col-md-4 col-sm-12">
+              <div class="containeInside">
 
+              
               <!-- starts -->
-              <div class="starts d-flex justify-content-center">
+              <div class="starts d-flex justify-content-center mb-3">
                 <i class="fa-solid fa-star" style="color: #f7da00;"></i>
                 <i class="fa-solid fa-star" style="color: #f7da00;"></i>
                 <i class="fa-solid fa-star" style="color: #f7da00;"></i>
@@ -364,12 +387,39 @@
               <img class="rounded-circle mb-2" src="imgs/testimonials/testimonials-1.jpg" alt="">
               <h4 class="fw-bold fs-5">Saul Goodman</h4>
               <h5 class="text-secondary-emphasis fs-6">Ceo & Founder</h5>
+            </div>
+          </div>
+            </div>
+            <div class="cardd col-md-4 col-sm-12">
+              <div class="containeInside">
+
+              
+              <!-- starts -->
+              <div class="starts d-flex justify-content-center mb-3">
+                <i class="fa-solid fa-star" style="color: #f7da00;"></i>
+                <i class="fa-solid fa-star" style="color: #f7da00;"></i>
+                <i class="fa-solid fa-star" style="color: #f7da00;"></i>
+                <i class="fa-solid fa-star" style="color: #f7da00;"></i>
+                <i class="fa-solid fa-star" style="color: #f7da00;"></i>
+              </div>
+            <!-- starts -->
+
+            <p>
+              Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+            </p>
+
+            <!-- cardImg -->
+            <div class="cardImgHolder">
+              <img class="rounded-circle mb-2" src="imgs/testimonials/testimonials-2.jpg" alt="">
+              <h4 class="fw-bold fs-5">Sara Wilsson</h4>
+              <h5 class="text-secondary-emphasis fs-6">Designer</h5>
+            </div>
             </div>
             </div>
             <div class="cardd col-md-4 col-sm-12">
-
+              <div class="containeInside">
               <!-- starts -->
-              <div class="starts d-flex justify-content-center">
+              <div class="starts d-flex justify-content-center mb-3">
                 <i class="fa-solid fa-star" style="color: #f7da00;"></i>
                 <i class="fa-solid fa-star" style="color: #f7da00;"></i>
                 <i class="fa-solid fa-star" style="color: #f7da00;"></i>
@@ -379,37 +429,15 @@
             <!-- starts -->
 
             <p>
-              Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+              Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
             </p>
 
             <!-- cardImg -->
             <div class="cardImgHolder">
-              <img class="rounded-circle mb-2" src="imgs/testimonials/testimonials-1.jpg" alt="">
-              <h4 class="fw-bold fs-5">Saul Goodman</h4>
-              <h5 class="text-secondary-emphasis fs-6">Ceo & Founder</h5>
+              <img class="rounded-circle mb-2" src="imgs/testimonials/testimonials-3.jpg" alt="">
+              <h4 class="fw-bold fs-5">Jena Karlis</h4>
+              <h5 class="text-secondary-emphasis fs-6">Store Owner</h5>
             </div>
-            </div>
-            <div class="cardd col-md-4 col-sm-12">
-
-              <!-- starts -->
-              <div class="starts d-flex justify-content-center">
-                <i class="fa-solid fa-star" style="color: #f7da00;"></i>
-                <i class="fa-solid fa-star" style="color: #f7da00;"></i>
-                <i class="fa-solid fa-star" style="color: #f7da00;"></i>
-                <i class="fa-solid fa-star" style="color: #f7da00;"></i>
-                <i class="fa-solid fa-star" style="color: #f7da00;"></i>
-              </div>
-            <!-- starts -->
-
-            <p>
-              Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-            </p>
-
-            <!-- cardImg -->
-            <div class="cardImgHolder">
-              <img class="rounded-circle mb-2" src="imgs/testimonials/testimonials-1.jpg" alt="">
-              <h4 class="fw-bold fs-5">Saul Goodman</h4>
-              <h5 class="text-secondary-emphasis fs-6">Ceo & Founder</h5>
             </div>
             </div>
 
@@ -446,10 +474,10 @@
 
 
       <!--=================== strat blog ===================-->
-        <div id="blog">
+        <div id="blog" class="mb-4">
           <div class="container">
 
-            <div class="blogTitle text-center">
+            <div class="blogTitle text-center mb-4">
               <span class="titleSet">BLOG</span>
             <h3 class="hTitleSet">Recent posts form our Blog</h3>
           </div>
@@ -491,6 +519,157 @@
         </div>
         </div>
       <!--=================== end blog ===================-->
+      
+      
+      <!--=================== start contact ===================-->
+        <div id="contact" class="mb-5">
+          <div class="container">
+            <div class="contactTitle text-center mb-5">
+              <span class="titleSet">CONTACT</span>
+              <h3 class="hTitleSet">Contact Us</h3>
+            </div>
+            <div class="row">
+              <div class="col-md-6 col-sm-12">
+                <div class="firstContact d-grid gap-5">
+                  <div class="contactIcon"><i class="fa-solid fa-location-dot"></i>
+                    <span class="contactSpan">Address</span>
+                    <p class="contactP">A108 Adam Street,<br>New York, NY 535022</p>
+                  </div>
+                  <div class="contactIcon"><i class="fa-solid fa-phone"></i>
+                    <span class="contactSpan">Call Us</span>
+                    <p class="contactP">+1 5589 55488 55<br>+1 6678 254445 41</p>
+                  </div>
+                  <div class="contactIcon"><i class="fa-regular fa-envelope"></i>
+                    <span class="contactSpan">Email Us</span>
+                    <p class="contactP">info@example.com<br>contact@example.com</p>
+                  </div>
+                  <div class="contactIcon"><i class="fa-regular fa-clock"></i>
+                    <span class="contactSpan">Open Hours</span>
+                    <p class="contactP">Monday - Friday<br>9:00AM - 05:00PM</p>
+                  </div>
+                </div>
+              </div>
+              <div class="formInputs col-md-6 col-sm-12">
+                <div class="row">
+                  <div class="col">
+                    <input type="text" class="form-control" placeholder="Your name" aria-label="First name">
+                  </div>
+                  <div class="col">
+                    <input type="text" class="form-control" placeholder="Your Email" aria-label="Last name">
+                  </div>
+                  <div>
+                    <input type="text" class="form-control" id="inputSubject" placeholder="Subject">
+                  </div>
+                  <div class="text-left">
+                    <input type="text" class="form-control" id="inputMessage" placeholder="Message">
+                  </div>
+                  <a class="btn btn-primary" href="#">Send Message</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      <!--=================== end contact ===================-->
+      
+      
+      <!--=================== Start footer ===================-->
+        <div id="footer" class="mb-4">
+          <footer>
+            <div class="container">
+              <div class="row mb-5 gap-md-0 gap-3">
+                <div class="leftFooter col-md-5 col-sm-12">
+                  <div class="logo mb-2 me-auto">
+                    <a class="navbar-brand" href="#"><img src="imgs/logo.png" alt="">
+                    <span class="footerSpan">FlexStart</span></a>
+                  </div>
+                  <p class="mb-3">Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
+                  <div class="socialLinks d-flex gap-2">
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                  </div>
+                </div>
+                <div class="rightFooter col-md-7 col-sm-12">
+                  <div class="gridRow row">
+                    <div class="col-md-4 col-sm-6 mb-4">
+                      <div class="ms-md-4 ms-sm-0">
+
+                        <h4 class="footerTitle">USEFUL LINKS</h4>
+                        <div class="footerLinks">
+                        <ul>
+                          <li>
+                            <i class="fa-solid fa-chevron-right"></i>
+                            <a href="#">Home</a>
+                          </li>
+                          <li>
+                            <i class="fa-solid fa-chevron-right"></i>
+                            <a href="#">About us</a>
+                          </li>
+                          <li>
+                            <i class="fa-solid fa-chevron-right"></i>
+                            <a href="#">Services</a>
+                          </li>
+                          <li>
+                            <i class="fa-solid fa-chevron-right"></i>
+                            <a href="#">Terms of service</a>
+                          </li>
+                          <li>
+                            <i class="fa-solid fa-chevron-right"></i>
+                            <a href="#">Privacy policy</a>
+                          </li>
+                        </ul>
+                      </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 mb-4">
+                      <h4 class="footerTitle">OUR SERVICES</h4>
+                      <div class="footerLinks">
+                        <ul>
+                          <li>
+                            <i class="fa-solid fa-chevron-right"></i>
+                            <a href="#">Web Design</a>
+                          </li>
+                          <li>
+                            <i class="fa-solid fa-chevron-right"></i>
+                            <a href="#">Web Development</a>
+                          </li>
+                          <li>
+                            <i class="fa-solid fa-chevron-right"></i>
+                            <a href="#">Product Management</a>
+                          </li>
+                          <li>
+                            <i class="fa-solid fa-chevron-right"></i>
+                            <a href="#">Marketing</a>
+                          </li>
+                          <li>
+                            <i class="fa-solid fa-chevron-right"></i>
+                            <a href="#">Graphic Design</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                      <h4 class="footerTitle">CONTACT US</h4>
+                      <p class="footerContact">
+                        A108 Adam Street <br>
+                        New York, NY 535022<br>
+                        United States <br><br><br>
+                        <strong>Phone:</strong> +1 5589 55488 55<br>
+                        <strong>Email:</strong> info@example.com<br>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <div class="lastFooter">
+              <p>© Copyright <b>FlexStart</b>. All Rights Reserved</p>
+              <span>Designed by <a class="text-decoration-none" href="https://bootstrapmade.com/">BootstrapMade</a></span>
+            </div>
+            </div>
+          </footer>
+        </div>
+      <!--=================== end footer ===================-->
       
 
 

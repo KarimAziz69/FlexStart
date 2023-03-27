@@ -1,3 +1,34 @@
+// dark mode
+const darkBtn = document.querySelector('.darkBtn');
+const root = document.querySelector(':root');
+
+
+
+darkBtn.addEventListener('click', ()=>{
+  let body = document.body;
+  let bodyStyles = getComputedStyle(body);
+
+  console.log(bodyStyles);
+  let background = bodyStyles['79']
+  let bgColor = getComputedStyle(body).getPropertyValue(background);
+  bgColor.style.setProperty('color', 'red!important');
+});
+// dark mode
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // scroll to top
 const scrollToTopBtn = document.querySelector('.scrollToTop');
 scrollToTopBtn.style.display='none';
@@ -18,18 +49,35 @@ scrollToTopBtn.addEventListener('click', ()=> {
 
 // sticky navbar
 const navbar = document.querySelector('.navbar');
-window.addEventListener('scroll', ()=>{
+window.addEventListener('scroll', darkFun=()=>{
   if (window.scrollY >= 75) {
     navbar.style.backgroundColor = '#ffffff';
   } else {
     navbar.style.backgroundColor = "";
   }
+});
 
-})
+darkFun();
 
 
 
-// sticky navbar
+// mobile menu
+const menuOpen = document.querySelector('.navbar-toggler');
+const menuClose = document.querySelector('.menuCloseBtn');
+const mobileMenu = document.querySelector('.mobileMenuBck');
+
+menuOpen.addEventListener('click', ()=>{
+  // mobileMenu.classList.add('menuAnimationOpen');
+  mobileMenu.classList.remove('d-none');
+  mobileMenu.classList.add('d-block');
+});
+menuClose.addEventListener('click', ()=>{
+  mobileMenu.classList.remove('d-block');
+  mobileMenu.classList.add('d-none');
+});
+
+// mobile menu
+
 
 
 
@@ -232,6 +280,12 @@ slider.addEventListener('mousedown', (e)=>{
   slider.style.cursor='grabbing';
 });
 
+slider.addEventListener('touchstart', (e)=>{
+  dragging=true;
+  startX = e.touches[0].pageX - slider.offsetLeft;
+  scrollLeft = slider.scrollLeft;
+});
+
 slider.addEventListener('mouseleave', ()=>{
   dragging=false;
   slider.style.cursor='grab';
@@ -242,41 +296,22 @@ slider.addEventListener('mouseup', ()=>{
   slider.style.cursor='grab';
 });
 
+slider.addEventListener('touchend', ()=>{
+  dragging=false;
+});
+
 slider.addEventListener('mousemove', (e)=>{
   if(!dragging) return;
     e.preventDefault();
     const x = e.pageX - slider.offsetLeft;
-  const walk = (x - startX)*1; // adjust scroll speed
+  const walk = (x - startX)*1.5; // adjust scroll speed
   slider.scrollLeft = scrollLeft - walk;
 });
-let targetPosition = slider.scrollLeft + 200; // adjust target position here
 
-function animate() {
-  const difference = targetPosition - currentPosition;
-  const distance = difference * 0.1; // adjust movement speed here
-  currentPosition += distance;
-  slider.scrollLeft = currentPosition;
-
-  if (Math.abs(difference) < 1) {
-    // Stop the animation when you reach the target position
-    return;
-  }
-
-  // Otherwise, continue animating
-  requestAnimationFrame(animate);
-}
-
-// Set the initial position of the slider to its current scrollLeft value
-let currentPosition = slider.scrollLeft;
-
-setInterval(()=>{
-  slider.scrollLeft += 100; // adjust the number of pixels to move here
-  animate();
-}, 5000);
-// clients slider
-
-// date set
-
-
-
-// date set
+slider.addEventListener('touchmove', (e)=>{
+  if(!dragging) return;
+    e.preventDefault();
+    const x = e.touches[0].pageX - slider.offsetLeft;
+  const walk = (x - startX)*1.5; // adjust scroll speed
+  slider.scrollLeft = scrollLeft - walk;
+});
