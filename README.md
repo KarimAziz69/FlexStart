@@ -4,5 +4,5 @@
  
 <a href="https://karimaziz69.github.io/FlexStart/"><b>Live preview</b></a><br>
 
-<h3><s>Working on full responsibility webSite, Contact Form and the footer section</s></h3><br>
+<h3><s>Working on full responsibility webSite, Contact Form and the footer section</s>✅</h3><br>
 <h3>Working on dark mode</h3>
