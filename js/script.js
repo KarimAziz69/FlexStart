@@ -1,18 +1,18 @@
 // dark mode
-const darkBtn = document.querySelector('.darkBtn');
-const root = document.querySelector(':root');
+// const darkBtn = document.querySelector('.darkBtn');
+// const root = document.querySelector(':root');
 
 
 
-darkBtn.addEventListener('click', ()=>{
-  let body = document.body;
-  let bodyStyles = getComputedStyle(body);
+// darkBtn.addEventListener('click', ()=>{
+//   let body = document.body;
+//   let bodyStyles = getComputedStyle(body);
 
-  console.log(bodyStyles);
-  let background = bodyStyles['79']
-  let bgColor = getComputedStyle(body).getPropertyValue(background);
-  bgColor.style.setProperty('color', 'red!important');
-});
+//   console.log(bodyStyles);
+//   let background = bodyStyles['79']
+//   let bgColor = getComputedStyle(body).getPropertyValue(background);
+//   bgColor.style.setProperty('color', 'red!important');
+// });
 // dark mode
 
 
